@@ -153,8 +153,11 @@
 						<ul class="social-icons-footer">
 						    {% for name,link in SOCIAL %}
 								<li>
-									<a href="{{ link }}" class="tooltip top" title="{{ name }}">
-										<i class="icon-{{ name|lower }}"></i>
+									<a href="{{ link }}" class="tooltip" title="{{ name }}">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-square-o fa-stack-2x"></i>
+										    <i class="fa fa-{{ name|lower }} fa-stack-1x"></i>
+                                        </span>
 									</a>
 								</li>
 						    {% endfor %}
